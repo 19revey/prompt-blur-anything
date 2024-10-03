@@ -1,2 +1,14 @@
 # prompt-blur-anything
 A VLM-based tool to blur objects in images/videos, based on Florence-2 and SMA2.
+
+```python
+python main.py --image_path test_images/test2.webp --pixelation_size 10  --prompt "baby"
+```
+
+- Prompt-based Object Detection using Florence-2
+- Boxes from Florence-2 are processed by SAM2 for segmentation
+<div style="display: flex; justify-content: space-between;">
+    <img src="test_images/test2.webp" alt="Image 1" style="width: 30%;"/>
+    <img src="output_segments/test2.webp" alt="Image 2" style="width: 30%;"/>
+    <img src="output_images/test2.webp" alt="Image 3" style="width: 30%;"/>
+</div>
