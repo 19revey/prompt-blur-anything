@@ -18,7 +18,6 @@ python main.py --image_path images/test_images/test2.webp --pixelation_size 10  
 
 ### Blur all human faces in the picture
 ```python
-<<<<<<< HEAD
 python main.py --image_path test_images/test2.webp --pixelation_size 20  --prompt "human face"
 ```
 
