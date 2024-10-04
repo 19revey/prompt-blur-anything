@@ -50,11 +50,11 @@ class ModelDeplyPipeline:
 
             boxes = self.dector.detect(image,prompt)
 
-            output_path = Path("output_segments") / image_p.name
+            output_path = Path("images/output_segments") / image_p.name
             segmented_image = self.segmenter.segment_and_show(image, boxes)
             segmented_image.save(output_path.as_posix())
 
 
-            output_path = Path("output_images") / image_p.name
+            output_path = Path("images/output_images") / image_p.name
             segmented_image = self.segmenter.segment_and_pixelate(image, boxes,pixelation_size=pixelation_size)
             segmented_image.save(output_path.as_posix())
