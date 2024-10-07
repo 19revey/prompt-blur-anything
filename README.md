@@ -2,7 +2,7 @@
 A VLM-based tool to blur objects in images/videos, based on Florence-2 and SMA2.
 
 - Prompt-based Object Detection using Florence-2
-- Boxes from Florence-2 are processed by SAM2 for segmentation
+- Bounding boxes from Florence-2 are processed by SAM2 for segmentation
 
 ## Examples:
 ### Blur babies in the picture
